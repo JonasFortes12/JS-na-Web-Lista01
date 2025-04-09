@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        alert(`
+            Escolha uma opção de operação
+            '1' - Somar
+            '2' - Subtrair
+            '3' - Dividir
+            '4' - Multiplicar 
+        `)
+
+        const opcao = prompt("Digite a opção: ")
+        const numero1 = prompt("Digite o primeiro numero: ")
+        const numero2 = prompt("Digite o segundo número: ")
+        
+
+
+        switch(opcao){
+            case '1':
+                alert(`O resultado da adição ${numero1+numero2}`)
+                break;
+
+            case '2':
+                alert(`O resultado da subtração ${numero1-numero2}`)
+                break;
+
+            case '3':
+                alert(`O resultado da divisão ${numero1/numero2}`)
+                break;
+
+            case '4':
+                alert(`O resultado da multiplicação ${numero1*numero2}`)
+                break;
+
+            default:
+                alert("Opção Inválida!")
+                break;
+        }
+
+
+    </script>
+</body>
+</html>
